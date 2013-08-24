@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl" >
+    <meta charset="utf-8"> 
+    <title>dkPro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Public Enemy #1"> 
+    <link href="css/bootstrap.cyborg.css" rel="stylesheet" type="text/css">
+    <link href="css/dbg.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	
+	<body data-ng-app="dkPro">
+
+  <div ng-include="'topNav.html'" id="nav1"></div>
+
+    <!--   <div data-ng-include src="'partials/tabs.html'">Ładowanie...</div>-->
+<div data-ng-view="appView" class="appView">Ładuję aplikację...</div>
+
+
+	<script type="text/javascript" src="/js/jquery.js"></script>
+
+	<script type="text/javascript" src="/js/angular.min.js"></script>
+	
+	<script type="text/javascript" src="/demo/app/dkPro.js"></script>
+    <script type="text/javascript" src="/demo/app/svc/userSvc.js"></script>
+
+    </body>
+</html>
+
