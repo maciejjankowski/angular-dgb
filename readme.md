@@ -15,32 +15,32 @@ CSS content to the rescue
 The idea behind it is really simple - it's based upon CSS content property which renders controller name right where the the controller-bound tag starts.
 
 ```
-	.dbg-ctrl:before
-	{
+.dbg-ctrl:before
+{
 	content: attr(ng-controller) attr(data-ng-controller);
 	position:relative;
 	line-height: 16px;
 	font-size: 16px;
 	background-color: greenyellow;
 	padding:2px 6px;
-	}
+}
 ```
 
 I also added a translucent background for easily identifying controllers nesting.
 
 ```
-	.dbg-ctrl
-	{
+.dbg-ctrl
+{
 	border: 1px dotted crimson;
 	background-color: rgba(173,255,47,0.09);
 	padding:5px;
-	}
+}
 ```
 	
 Then I'm using jQuery to dynamically add the class:
 
 ```
-	$('[ng-controller]').addClass('dbg-ctrl');
+$('[ng-controller]').addClass('dbg-ctrl');
 ```
 
 While adding classes with jQuery is definitely not recommended* in your production app, here I chose it deliberately because I didn't want to pollute my production code and I wanted to make it easy to unplug this "feature" from my application.
