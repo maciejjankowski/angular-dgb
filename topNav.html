@@ -1,63 +1,12 @@
-<div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navCtrl">
+<div class="navbar navbar-inverse" ng-controller="navCtrl">
   		<div class="navbar-inner">
-    	<a class="brand" href="#">dkPro</a>
-        	<!--<div class="input-append search-up" ng-show="user.username"  ng-cloak>-->
-            	<!--<form>-->
-  					<!--<input class="span2" id="appendedInputButtons" type="text">-->
-  					<!--<button class="btn" type="button"><i class="icon-search"></i></button>-->
-              	<!--</form>-->
-  			<!--</div>-->
-    		<ul class="nav" id="nav-main" ng-show="user.username"  ng-cloak>
-      			<li data-ng-class="{ active: activePath=='start' }"><a href="#/start"><i class="icon-home"></i></a></li>
-				<li class="dropdown" data-ng-class="{ active: activePath=='client' }">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Klienci <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#/clients/new">Nowy klient</a></li>
-						<li><a href="#/clients/">Kartoteka klientów</a></li>
-						<!--<li><a href="#">Usuń klienta</a></li>-->
-					</ul>
-				</li>
-				<li class="dropdown" data-ng-class="{ active: activePath=='loan' }">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pożyczki <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#/loans/new">Nowa pożyczka</a></li>
-						<!--<li><a href="#/loans/">Kartoteka pożyczek</a></li>-->
-						<!--<li><a href="#/loans/">Przedłużenie</a></li>-->
-                        <li><a href="#/loans/approve">Pożyczki do zatwierdzenia</a></li>
-					</ul>
-				</li>
-				<li class="dropdown" data-ng-class="{ active: activePath=='payment' }">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Należności <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-                        <li><a href="#/payments/new">Nowa wpłata</a></li>
-                        <!--<li><a href="#/payments">Raport kasowy</a></li>-->
-						<li><a href="#/payments">Windykacja</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Raporty <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li style="margin-left:5px !important;padding-top:10px !important">&nbsp;<small><strong>Raporty</strong></small></li>
-						<li><a ng-href="#/raport/dzienny/{{ user.branch.id }}">Dzienny</a></li>
-						<!--<li><a href="#/raport/tygodniowy">Tygodniowy</a></li>-->
-						<li><a ng-href="#/raport/miesieczny/{{ user.branch.id }}">Miesięczny</a></li>
-						<li><hr style="padding:0px;margin:10px"></li>
-						<li>&nbsp;<small style="margin-left:5px"><strong>Wykresy</strong></small></li>
-                        <li><a href="#/raport/przyrostKlientow">Plan sprzedaży</a></li>
-                        <li><a href="#/raport/przyrostKlientow">Przyrost klientów</a></li>
-						<li><a href="#/raport/przyrostKapitalu">Przyrost kapitału</a></li>
-                        <li><a href="#/raport/srednieOpoznienie">Średnie opóźnienie spłat</a></li>
-						<li><a href="#/raport/skutecznoscEgzekucji">Skuteczność egzekucji</a></li>
-					</ul>
-				</li>
+    	<a class="brand" href="#">b-good</a>
 
-    		</ul>
-			<ul class="nav options">
-                <!--<li class="pull-right">{{ user.branch.name }} {{ user.username }}</li> TODO: czemu to jest szare i brzydkie? -->
-                <li><a href="" ng-click="switchDbg()"><i class="icon-wrench icon-white"></i>{{ dbg }}</a></li>
-                <!--todo: icon-white w zależności od motywu-->
-				<li  ng-show="user.username" data-ng-class="{ active: (activePath=='settings' || activePath=='products' || activePath=='branches' || activePath=='employees' || activePath=='options') }"><a href="#/settings"><i class="icon-white icon-cog"></i></a></li>
-				<li><a href="" ng-click="logout()"><i class="icon-white icon-off"></i></a></li>
+ 			<ul class="nav">
+                <li><a href="" ng-click="switchDbg()">I can show you unimaginable things</a></li>
+			</ul>
+			<ul class="nav pull-right">
+                <li><a href="http://www.pimsleur.com/learn-english-for-french-speakers" ng-click="fr=1" title="get a hike!"><canvas id="canvas1" width="18" height="12"></canvas></a></li>
 			</ul>
   		</div>
 	</div>

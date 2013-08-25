@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl" >
-    <meta charset="utf-8"> 
-    <title>dkPro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="author" content="Public Enemy #1"> 
-    <link href="css/bootstrap.cyborg.css" rel="stylesheet" type="text/css">
-    <link href="css/dbg.css" rel="stylesheet" type="text/css">
-	</head>
-	
-	
-	<body data-ng-app="dkPro">
-
-  <div ng-include="'topNav.html'" id="nav1"></div>
-
-    <!--   <div data-ng-include src="'partials/tabs.html'">Ładowanie...</div>-->
-<div data-ng-view="appView" class="appView">Ładuję aplikację...</div>
+<head>
+<meta charset="utf-8"> 
+<title>b-good</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="author" content="@mjankowski"> 
+<link href="css/bootstrap.cyborg.css" rel="stylesheet" type="text/css">
+<link href="css/dbg.css" rel="stylesheet" type="text/css">
+</head>
 
 
-	<script type="text/javascript" src="/js/jquery.js"></script>
+<body data-ng-app="app1">
 
-	<script type="text/javascript" src="/js/angular.min.js"></script>
-	
-	<script type="text/javascript" src="/demo/app/dkPro.js"></script>
-    <script type="text/javascript" src="/demo/app/svc/userSvc.js"></script>
+<div ng-include="'topNav.html'"></div>
 
-    </body>
+<div  class="container">
+
+	<div class="row">
+		<div data-ng-controller="oneCtrl" class="span8 offset2"> 
+		<img src="http://placekitten.com/100/95">
+			<div data-ng-controller="twoCtrl"> 
+				<img src="http://placekitten.com/100/80">
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center"><a class="btn btn-inverse" ng-click="switchDbg()">I can show you unimaginable things</a></div>
+
+	<div ng-include="'imaPartial.html'"></div>
+
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-cookies.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
 </html>
-

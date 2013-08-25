@@ -1,47 +1,66 @@
 .dbg-ctrl
 {
-    border: 1px dotted crimson;
+    border: 1px dotted greenyellow;
     background-color: rgba(173,255,47,0.09);
+	padding:5px;
 }
 .dbg-ctrl:before
 {
-    content:  attr(ng-controller) attr(data-ng-controller);
+    content: "Controller: " attr(ng-controller) attr(data-ng-controller);
     position:relative;
-    text-align: center;
-    top: 8px;
     line-height: 16px;
     font-size: 16px;
     background-color: greenyellow;
     padding:2px 6px;
+	color:black;
 }
+
+.dbg-app
+{
+    border: 1px dotted yellow;
+    background-color: rgba(173,255,47,0.09);
+	padding:5px;
+}
+.dbg-app:before
+{
+    content: "App: " attr(ng-app) attr(data-ng-app);
+    position:relative;
+    line-height: 16px;
+    font-size: 16px;
+    background-color: yellow;
+    padding:2px 6px;
+	color:black;
+}
+
 .dbg-include
 {
-    border: 1px dotted greenyellow;
+    border: 1px dotted grey;
     background-color: rgba(47,255,173,0.09);
+	padding:5px;
 }
 .dbg-include:before
 {
-    content:  attr(ng-include) attr(data-ng-include);
+    content:  "Include: " attr(ng-include) attr(data-ng-include);
     text-align: center;
     background-color: lightyellow;
     color:black;
     padding:2px 6px;
     opacity:0.6;
 }
-#nav1 .dbg-ctrl:before{
+.nav > .dbg-ctrl:before{
     content:none;
 }
-#nav1 .dbg-ctrl:after{
-    content:  attr(ng-controller) attr(data-ng-controller);
+.nav > .dbg-ctrl:after{
+    content: "Controller: " attr(ng-controller) attr(data-ng-controller);
     text-align: center;
     background-color: greenyellow;
     padding:2px 6px;
 }
-#nav1 .dbg-include:before{
+.nav > .dbg-include:before{
     content:none;
 }
-#nav1 .dbg-include:after{
-    content:  attr(ng-include) attr(data-ng-include);
+.nav > .dbg-include:after{
+    content: "Include: " attr(ng-include) attr(data-ng-include);
     text-align: center;
     background-color: lightyellow;
     color: black;
