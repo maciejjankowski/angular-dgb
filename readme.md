@@ -7,6 +7,8 @@ So I came up with this little piece of code which you can easily discard when yo
 
 Demo
 --------------------
+![](http://imgur.com/download/Mwn8kkh)
+
 Can be seen here: http://maciejjankowski.github.io/angular-dgb/
 
 CSS content to the rescue
