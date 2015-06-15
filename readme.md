@@ -7,7 +7,7 @@ So I came up with this little piece of code which you can easily discard when yo
 
 Demo
 --------------------
-Can be seen here: http://b-good.pl/faster/angular/
+Can be seen here: http://b-good.pl/2013/08/25/working-with-angular/
 
 CSS content to the rescue
 ------------------------------
